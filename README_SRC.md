@@ -5,9 +5,21 @@ Self-Driving Car Engineer Nanodegree Program
 
 For safety reasons, it is important for a self-driving vehicle to estimate or predict the states of nearby moving objects. To this aim, most of self-driving cars are equipped with cameras, lidars and radars to obtain real time data. In this project, we discuss methods that can be used to improve the accuracy of estimation and prediction of states of nearby moving objects, if we only utilize the lidar and radar measurements. 
 
-Suppose we are going to use the preprocessed data from lidar sensors or radar sensors. These data are with noisy, refer to the following picture for an intuition.
+[//]: # (Image References)
+[image1]: ./pictures/EKF_fig3.png
+[image2]: ./pictures/EKF_fig4.png
+[image3]: ./pictures/EKF_fig1.png
+[image4]: ./pictures/EKF_fig2.png
 
+Suppose we are going to use the preprocessed data from lidar sensors or radar sensors. These data are with noisy. One can refer to the following figure for an intuition. 
 
+![alt text][image1]
+
+Here, lidar measurements are red circles, radar measurements are blue circles with an arrow pointing in the direction of the observed angle. As we can see, they follow randoom distributions, which cannot be used directly to predict the sates of nearby moving objects. In this project, we wish to lower down the uncertainty of prediction by considering also the law of motions. The method we will use Kalman Filter.
+
+The following is a figure about the prediction after Extended Kalman Filter.
+
+![alt_text][image2]
 
 
 
