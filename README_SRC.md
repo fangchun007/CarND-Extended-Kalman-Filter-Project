@@ -27,7 +27,7 @@ Here, lidar measurements are red circles, radar measurements are blue circles wi
 
 The following figure shows an improved real time estimation after Extended Kalman Filter. Here, the estimation markers are green triangles.
 
-![alt_text][image2]
+![alt_text][image5]
 
 ## EKF Algorithm - Overview
 
