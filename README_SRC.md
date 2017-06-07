@@ -5,7 +5,9 @@ Self-Driving Car Engineer Nanodegree Program
 
 For safety reasons, it is important for a self-driving vehicle to estimate or predict the states of nearby moving objects. To this aim, most of self-driving cars are equipped with cameras, lidars and radars to obtain real time data. In this project, we discuss methods that can be used to improve the accuracy of estimation and prediction of states of nearby moving objects, if we only utilize the lidar and radar measurements. 
 
-Suppose we are going to use the preprocessed data from lidar sensors or radar sensors. As we knew, those data are with noisy. Refer to 
+Suppose we are going to use the preprocessed data from lidar sensors or radar sensors. These data are with noisy, refer to the following picture for an intuition.
+
+
 
 
 
