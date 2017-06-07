@@ -66,8 +66,8 @@ The function tools calculate RMSE, Jacobian matrix, responsible for coordinate t
 
 The following pictures show the application our algorithm on Dataset 1 and Dataset 2 of the simulator.
 
-![alt_text][image1]
+![alt_text][image3]
 
-![alt_text][image2]
+![alt_text][image4]
 
 
