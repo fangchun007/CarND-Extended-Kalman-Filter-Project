@@ -15,9 +15,13 @@ Suppose we are going to use the preprocessed data from lidar sensors or radar se
 
 ![alt text][image1]
 
-Here, lidar measurements are red circles, radar measurements are blue circles with an arrow pointing in the direction of the observed angle. As we can see, they follow randoom distributions, which cannot be used directly to predict the sates of nearby moving objects. In this project, we wish to lower down the uncertainty of prediction by considering also the law of motions. The method we will use Kalman Filter.
+Here, lidar measurements are red circles, radar measurements are blue circles with an arrow pointing in the direction of the observed angle. As we can see, they follow randoom distributions, which cannot be used directly to predict the sates of nearby moving objects. In this project, we wish to lower down the uncertainty of prediction by considering also the law of motions. The method we will use Kalman Filter. See the links below for documents about EKF (Thanks to my reviewer):
 
-The following is a figure about the prediction after Extended Kalman Filter.
+  [EKF Tutorial](http://home.wlu.edu/~levys/kalman_tutorial/)
+
+  [Understanding and Applying Kalman Filtering](http://biorobotics.ri.cmu.edu/papers/sbp_papers/integrated3/kleeman_kalman_basics.pdf)
+
+The following is a figure about the prediction after Extended Kalman Filter. Note that the estimation markers are green triangles.
 
 ![alt_text][image2]
 
