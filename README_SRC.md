@@ -14,6 +14,7 @@ For safety reasons, it is important for a self-driving vehicle to estimate and p
 [image6]: ./pictures/main_fig.png
 [image7]: ./pictures/FusionEKF_fig.png
 [image8]: ./pictures/kalman_filter_fig.png
+[image9]: ./pictures/EKF_fig5.png
 
 Further, assume the data used here is the preprocessed data from lidar sensors or radar sensors. As we knew, these data are with noisy, which cannot be directly used as estimation or prediction of moving objects. Refer to the following figure to get an intuitive feeling. 
 
@@ -68,6 +69,6 @@ The following pictures show the application our algorithm on Dataset 1 and Datas
 
 ![alt_text][image3]
 
-![alt_text][image5]
+![alt_text][image9]
 
 
