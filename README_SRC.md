@@ -68,6 +68,6 @@ The following pictures show the application our algorithm on Dataset 1 and Datas
 
 ![alt_text][image3]
 
-![alt_text][image4]
+![alt_text][image5]
 
 
