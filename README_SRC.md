@@ -3,7 +3,7 @@ Self-Driving Car Engineer Nanodegree Program
 
 ## Introduction
 
-For safety reasons, it is important for a self-driving vehicle to estimate or predict the states of nearby moving objects. To this aim, most of self-driving cars are equipped with cameras, lidars and radars to obtain real time data. In this project, we discuss methods that can be used to improve the accuracy of estimation and prediction of states of nearby moving objects, if we only utilize the lidar and radar measurements. 
+For safety reasons, it is important for a self-driving vehicle to estimate and predict the states of nearby moving objects. To this aim, most of self-driving cars are equipped with cameras, lidars and radars to obtain real time data. In this project, we discuss methods that can be used to improve the accuracy of estimation on states of nearby moving objects, when only lidar and radar measurements were used. 
 
 [//]: # (Image References)
 [image1]: ./pictures/EKF_fig3.png
@@ -11,17 +11,17 @@ For safety reasons, it is important for a self-driving vehicle to estimate or pr
 [image3]: ./pictures/EKF_fig1.png
 [image4]: ./pictures/EKF_fig2.png
 
-Suppose we are going to use the preprocessed data from lidar sensors or radar sensors. These data are with noisy. One can refer to the following figure for an intuition. 
+Further, assume the data used here is the preprocessed data from lidar sensors or radar sensors. As we knew, these data are with noisy, which cannot be directly used as estimation or prediction of moving objects. Refer to the following figure to get an intuitive feeling. 
 
 ![alt text][image1]
 
-Here, lidar measurements are red circles, radar measurements are blue circles with an arrow pointing in the direction of the observed angle. As we can see, they follow randoom distributions, which cannot be used directly to predict the sates of nearby moving objects. In this project, we wish to lower down the uncertainty of prediction by considering also the law of motions. The method we will use Kalman Filter. See the links below for documents about EKF (Thanks to my reviewer):
+Here, lidar measurements are red circles, radar measurements are blue circles with an arrow pointing in the direction of the observed angle. As we can see, they follow randoom distributions, which could cause large errors with certain possibility in an estimation. In this project, we will lower down the uncertainty of prediction by considering also the law of motions. The method we are going to use is Kalman Filter. See below links for more documents on EKF (Thanks to my reviewer):
 
   [EKF Tutorial](http://home.wlu.edu/~levys/kalman_tutorial/)
 
   [Understanding and Applying Kalman Filtering](http://biorobotics.ri.cmu.edu/papers/sbp_papers/integrated3/kleeman_kalman_basics.pdf)
 
-The following is a figure about the prediction after Extended Kalman Filter. Note that the estimation markers are green triangles.
+The following figure shows an improved estimation after Extended Kalman Filter. Here, the estimation markers are green triangles.
 
 ![alt_text][image2]
 
