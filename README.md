@@ -1,6 +1,6 @@
 # Further Improvement:
 
-Hi, this section is for improvement of the present work. Feel free to use these ideas to improve your project work, Udacians!!
+Hi, this section is for improvement of the present work. Feel free to use these ideas in project work, Udacians!!
 
 **Root Mean Squared Error (RMSE)**
 
