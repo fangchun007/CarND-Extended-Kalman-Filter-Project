@@ -1,3 +1,21 @@
+# Further Improvement:
+
+Hi, this section is for improvement of the present work. Feel free to use these ideas to improve your project work, Udacians!!
+
+**Root Mean Squared Error (RMSE)**
+
+Note that data, including *estimations* and *ground_truth*, will be updated in every round of *h.onMessage()*, and then they were used to caluclate RMSE via function Tools::CalculateRMSE(). To refresh your memory, below is the definition of RMSE.
+
+```
+RMSE = \sqrt{\frac{1}{n}\sum_{t=1}^n(x_t^{est} - x_t^{true})^2}
+```
+This works good. But it will do a lot of repetitive calculation. Is there a way to improve the efficiency? Here is a suggestion. Suppose we just finished round n-1. So we already obatined RMSE_{n-1}. Further, we have the update estimations and ground_truth values: $x_n^{est}$ and $x_n^{true}$. Then one can calculate RMSE_n in the following way.
+```
+RMSE_n = \sqrt{\frac{1}{n} ((n-1)*RMSE_{n-1}^2 + (x_n^{est}-x_n^{true})^2)}
+```
+
+
+
 # Extended Kalman Filter Project Starter Code
 Self-Driving Car Engineer Nanodegree Program
 
