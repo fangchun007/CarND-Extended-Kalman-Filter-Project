@@ -20,9 +20,11 @@ public:
      */
     virtual ~Tools();
 
-    /**
-     * A helper method to calculate RMSE.
-     */
+    /// @brief A helper method to calculate RMSE.
+    ///
+    /// @param estimations
+    /// @return return the rmse
+    /// @remarks write your remarks here
     VectorXd CalculateRMSE(const vector<VectorXd> &estimations, const vector<VectorXd> &ground_truth);
 
     /**
